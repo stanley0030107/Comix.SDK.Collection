@@ -1,0 +1,41 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <Version>1.0.1</Version>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Common\**" />
+    <Compile Remove="Service\**" />
+    <EmbeddedResource Remove="Common\**" />
+    <EmbeddedResource Remove="Service\**" />
+    <None Remove="Common\**" />
+    <None Remove="Service\**" />
+    <Compile Remove="Models\ProductHeadModel.cs" />
+    <Compile Remove="Models\ProductDetailModel.cs" />
+    <Compile Remove="Models\ProductUnitModel.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="HttpContextHelper.cs" />
+    <Compile Remove="ISAPLog.cs" />
+    <Compile Remove="MyWebClient.cs" />
+    <Compile Remove="POService.cs" />
+    <Compile Remove="RpcHelper.cs" />
+    <Compile Remove="RpcService.cs" />
+    <Compile Remove="SAPLogService.cs" />
+    <Compile Remove="SAPPOHelper.cs" />
+    <Compile Remove="SAPUrlAddress.cs" />
+    <Compile Remove="Services\SAPPOHelper.cs" />
+    <Compile Remove="Services\SrcFinPaymentService.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Comix.Core\Comix.Core.csproj" />
+  </ItemGroup>
+  
+</Project>

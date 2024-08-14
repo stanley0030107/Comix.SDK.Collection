@@ -1,0 +1,17 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+        <Version>1.0.4</Version>
+        <Description>增加tag</Description>
+<!--        <PackageId>Comix.CAP.RocketMQ4</PackageId>-->
+    </PropertyGroup>
+
+    <ItemGroup>
+      <PackageReference Include="DotNetCore.CAP" Version="3.1.0" />
+      <PackageReference Include="Microsoft.Bcl.AsyncInterfaces" Version="7.0.0" />
+      <PackageReference Include="NewLife.RocketMQ" Version="1.5.2021.509" />
+    </ItemGroup>
+
+</Project>

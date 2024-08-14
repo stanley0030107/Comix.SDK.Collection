@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Title>对接PMS服务的SDK实体</Title>
+    <Version>1.0.7</Version>
+    <PackageReleaseNotes>1.新增接口：合同单条查询(/contract)</PackageReleaseNotes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="ReqModels - 副本\**" />
+    <Compile Remove="RespModels - 副本\**" />
+    <EmbeddedResource Remove="ReqModels - 副本\**" />
+    <EmbeddedResource Remove="RespModels - 副本\**" />
+    <None Remove="ReqModels - 副本\**" />
+    <None Remove="RespModels - 副本\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+
+</Project>
